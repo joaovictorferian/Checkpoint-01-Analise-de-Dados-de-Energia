@@ -19,38 +19,30 @@ Aplicar os procedimentos trabalhados em aula para preparar, inspecionar e analis
 
 Os exercícios de Python são resolvidos em um único notebook Python (`.ipynb`). A etapa no Orange Data Mining é usada para conhecer e preparar os dados (seleção de atributos, verificação de qualidade e amostragem) antes da análise no Python/Pandas.
 
-## Dataset trabalhado por este grupo
+## Datasets da atividade
 
-**Dataset 1 — Appliances Energy Prediction (UCI)**
+A atividade disponibiliza seis datasets do setor de energia.
 
-> Situação: a empresa de eficiência energética está analisando o comportamento de uma residência de baixo consumo. A equipe deseja identificar períodos de consumo elevado dos eletrodomésticos e observar quais condições de temperatura e umidade estavam presentes nesses momentos.
+**1. Appliances Energy Prediction (UCI)**
+Identificar períodos de consumo elevado de eletrodomésticos numa residência e relacionar com temperatura/umidade.
+Link: https://archive.ics.uci.edu/dataset/374/appliances+energy+prediction
 
-**Etapa A — Orange Data Mining**
-- Carregar `energydata_complete.csv` com o widget File.
-- Inspecionar os registros no Data Table e identificar atributos de consumo, temperatura e umidade.
-- Usar Select Columns para manter `Appliances`, `lights`, pelo menos três atributos de temperatura e três de umidade.
-- Verificar valores ausentes (o dataset do UCI não possui, mas a checagem faz parte do procedimento).
-- Gerar uma amostra aleatória de 10% com Data Sampler.
-- Exportar a amostra em CSV com Save Data.
+**2. Steel Industry Energy Consumption (UCI)**
+Achar consumo elevado numa indústria siderúrgica e relacionar com carga e fator de potência.
+Link: https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption
 
-**Etapa B — Python / Pandas**
-- Carregar a amostra e apresentar `head()`, `shape`, `info()` e `describe()`.
-- Renomear `Appliances` para `Consumo_Eletrodomesticos` e simplificar pelo menos três atributos ambientais.
-- Determinar o maior consumo de eletrodomésticos registrado na amostra.
-- Calcular um limiar de 70% do valor máximo e criar um DataFrame com os registros acima desse limite.
-- Contar os registros selecionados e calcular o percentual que representam da amostra.
-- Calcular a temperatura média de T1 e criar um segundo DataFrame com consumo acima de 70% do máximo **e** temperatura acima da média.
-- Comparar os dois DataFrames e explicar o efeito da inclusão da temperatura como segundo critério.
+**3. Power Consumption of Tetouan City (UCI)**
+Identificar qual das três zonas da cidade tem o maior pico de consumo e as condições ambientais nesses momentos.
+Link: https://archive.ics.uci.edu/dataset/849/power+consumption+of+tetouan+city
 
-## Todos os datasets da atividade (referência)
+**4. Solar Power Generation Data (Kaggle)**
+Localizar períodos de alta geração numa usina fotovoltaica e quais inversores aparecem mais nesses momentos.
+Link: https://www.kaggle.com/datasets/anikannal/solar-power-generation-data
 
-A atividade completa disponibiliza seis datasets do setor de energia; cada grupo resolve apenas o indicado pelo professor.
+**5. Wind & Solar Energy Production (Kaggle)**
+Comparar picos de produção solar e eólica, cada uma avaliada contra sua própria escala.
+Link: https://www.kaggle.com/datasets/ahmeduzaki/wind-and-solar-energy-production-dataset
 
-| # | Dataset | Link |
-|---|---|---|
-| 1 | Appliances Energy Prediction (UCI) | | https://archive.ics.uci.edu/dataset/374/appliances+energy+prediction
-| 2 | Steel Industry Energy Consumption (UCI) | | https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption
-| 3 | Power Consumption of Tetouan City (UCI) | | https://archive.ics.uci.edu/dataset/849/power+consumption+of+tetouan+city
-| 4 | Solar Power Generation Data (Kaggle) | | https://www.kaggle.com/datasets/anikannal/solar-power-generation-data
-| 5 | Wind & Solar Energy Production (Kaggle) | | https://www.kaggle.com/datasets/henriupton/wind-solar-electricity-production
-| 6 | Individual Household Electric Power Consumption (UCI) | | https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
+**6. Individual Household Electric Power Consumption (UCI)**
+Identificar demanda elétrica elevada com corrente acima da média numa residência; único dataset que exige tratamento de valores ausentes antes da amostragem.
+Link: https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
