@@ -48,9 +48,9 @@ A atividade completa disponibiliza seis datasets do setor de energia; cada grupo
 
 | # | Dataset | Link |
 |---|---|---|
-| 1 | Appliances Energy Prediction (UCI) | |
-| 2 | Steel Industry Energy Consumption (UCI) | |
-| 3 | Power Consumption of Tetouan City (UCI) | |
-| 4 | Solar Power Generation Data (Kaggle) | |
-| 5 | Wind & Solar Energy Production (Kaggle) | |
-| 6 | Individual Household Electric Power Consumption (UCI) | |
+| 1 | Appliances Energy Prediction (UCI) | | https://archive.ics.uci.edu/dataset/374/appliances+energy+prediction
+| 2 | Steel Industry Energy Consumption (UCI) | | https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption
+| 3 | Power Consumption of Tetouan City (UCI) | | https://archive.ics.uci.edu/dataset/849/power+consumption+of+tetouan+city
+| 4 | Solar Power Generation Data (Kaggle) | | https://www.kaggle.com/datasets/anikannal/solar-power-generation-data
+| 5 | Wind & Solar Energy Production (Kaggle) | | https://www.kaggle.com/datasets/henriupton/wind-solar-electricity-production
+| 6 | Individual Household Electric Power Consumption (UCI) | | https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
