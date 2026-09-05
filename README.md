@@ -46,3 +46,9 @@ Link: https://www.kaggle.com/datasets/ahmeduzaki/wind-and-solar-energy-productio
 **6. Individual Household Electric Power Consumption (UCI)**
 Identificar demanda elétrica elevada com corrente acima da média numa residência; único dataset que exige tratamento de valores ausentes antes da amostragem.
 Link: https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
+
+## Desafio Final — Análise de Dados de Energia com API Pública
+ 
+**Problema:** uma equipe de planejamento energético precisa analisar o comportamento da carga elétrica de uma região atendida pelo Sistema Interligado Nacional (SIN), a partir de dados obtidos diretamente da API pública de Carga Verificada do ONS (Operador Nacional do Sistema Elétrico). No caso deste notebook, a análise cobre a área SP no período de 01/08/2025 a 07/08/2025.
+ 
+**Solução:** a partir do JSON retornado pela API, o grupo constrói e inspeciona um DataFrame, organiza e trata os atributos (data/hora, área e valor de carga), calcula indicadores estatísticos (mínimo, máximo, média, mediana, amplitude), isola períodos de alta demanda (carga acima de 90% do pico) e aplica um segundo critério de recorte definido pela equipe (carga acima da média), comparando os dois grupos. A análise é fechada com dois gráficos (série temporal da carga e distribuição dos valores), uma síntese numérica dos resultados e um relatório técnico apoiado por IA (Gemini), submetido a uma validação crítica da equipe antes da versão final.
